@@ -9,19 +9,19 @@ import FlashOnIcon from "@material-ui/icons/FlashOn";
 const SwipeButtons = () => {
   return (
     <div className="swipeBtn">
-      <IconButton className="swipebuttons__repeat">
+      <IconButton className="swipeButtons__repeat">
         <ReplayIcon color="" fontSize="large" />
       </IconButton>
-      <IconButton className="swipebuttons__left">
+      <IconButton className="swipeButtons__left">
         <CloseIcon color="" fontSize="large" />
       </IconButton>
-      <IconButton className="swipebuttons__star">
+      <IconButton className="swipeButtons__star">
         <StarRateIcon color="" fontSize="large" />
       </IconButton>
-      <IconButton className="swipebuttons__right">
+      <IconButton className="swipeButtons__right">
         <FavoriteIcon color="" fontSize="large" />
       </IconButton>
-      <IconButton className="swipebuttons__lightning">
+      <IconButton className="swipeButtons__lightning">
         <FlashOnIcon color="" fontSize="large" />
       </IconButton>
     </div>
