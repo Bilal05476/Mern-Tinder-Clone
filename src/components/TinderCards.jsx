@@ -6,11 +6,13 @@ const TinderCards = () => {
   const [people, setPeople] = useState([
     {
       name: "Bilal",
-      url: "https://google.com/",
+      url:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAJF_sIIKRv0q7tWOwl4xHDG8MLeiZe-6GSA&usqp=CAU",
     },
     {
       name: "Ahmed",
-      url: "https://google.com/",
+      url:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAJF_sIIKRv0q7tWOwl4xHDG8MLeiZe-6GSA&usqp=CAU",
     },
   ]);
 
@@ -30,7 +32,14 @@ const TinderCards = () => {
             preventSwipe={["up", "down"]}
             onSwipe={(dir) => swiped(dir, person.name)}
             onCardLeftScreen={() => outOfFrame(person.name)}
-          />
+          >
+            <div
+              style={{ backgroundImage: `url(${person.url})` }}
+              className="card"
+            >
+              <h3>{person.name}</h3>
+            </div>
+          </TinderCard>
         ))}
       </div>
     </div>
